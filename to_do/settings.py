@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-7=huro0&21lwch9p3$no7qvy^2x(z=-wysnyp=nflvoh!2fqzu
 DEBUG = False
 
 ALLOWED_HOSTS = ["8000-hodoismail-todoapp-cbzjxvgh08t.ws.codeinstitute-ide.net",
-"https://to-do-app-fullstack-project-74dd371d2b6e.herokuapp.com/"]
+"https://to-do-app-fullstack-project-74dd371d2b6e.herokuapp.com/",]
 
 CSRF_TRUSTED_ORIGINS= ["https://*.codeinstitute-ide.net",
 "https://*.herokuapp.com"]
