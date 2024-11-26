@@ -1,5 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
 <h1> Doable</h1>
 
-{% for task in tasks %}
-<p> {{task}}</p>
+{% for task in tasks_list %}
+<p> {{task}} </p>
 {% endfor %}
+
+{% endblock %}
