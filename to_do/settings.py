@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["8000-hodoismail-todoapp-cbzjxvgh08t.ws.codeinstitute-ide.net",
 "to-do-app-fullstack-project-74dd371d2b6e.herokuapp.com",]
