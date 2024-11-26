@@ -34,7 +34,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = False
 
 ALLOWED_HOSTS = ["8000-hodoismail-todoapp-cbzjxvgh08t.ws.codeinstitute-ide.net",
-"https://to-do-app-fullstack-project-74dd371d2b6e.herokuapp.com/",]
+"to-do-app-fullstack-project-74dd371d2b6e.herokuapp.com/",]
 
 CSRF_TRUSTED_ORIGINS= ["https://*.codeinstitute-ide.net",
 "https://*.herokuapp.com"]
