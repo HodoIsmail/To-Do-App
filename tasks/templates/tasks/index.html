@@ -3,23 +3,20 @@
 {% block content %}
 <h1> Doable</h1>
 
-      <form method="POST"
-        style="margin-top: 1.3em;">
-       {{form.title}}
+      <form method="POST">
+       
         {% csrf_token %}
-        
-        <button id="submitButton" type="submit"
-          class="btn btn-signup btn-lg">Submit</button>
+        {{task_form}} 
+        <input type="submit"
+          class="btn"></input>
       </form>
      
-    </div>
-  </div>
+  
 
 
-{% for task in task_list %}
+{% for task in tasks %}
 <p> {{task}} </p>
-<p>  {{task.completed}}</p>
-<p> {{task.created_on}}</p>
+
 {% endfor %}
 
 {% endblock %}

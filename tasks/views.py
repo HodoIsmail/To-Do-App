@@ -1,6 +1,6 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect
 from django.views import generic
-from . models import Task
+from .models import Task
 from .forms import TaskForm
 
 # Create your views here.
@@ -15,10 +15,20 @@ from .forms import TaskForm
 
 def task_details(request):
     tasks = Task.objects.all()
-    
-    task_form = TaskForm()
-    
+
+    if request.method == 'POST':
+        
+        form = TaskForm(request.POST)
+        if form.is_valid():
+            task = form.save(commit=False)
+            task.user = request.user
+            task.save()
+            return redirect('/')
+        
+
+    form = TaskForm()
+
     return render(request, 
-    'tasks/index.html',
-     {'tasks': tasks},
-     {'task_form': task_form})
+        'tasks/index.html',
+        {'tasks': tasks,
+         'task_form': form})
