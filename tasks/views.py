@@ -14,11 +14,11 @@ from .forms import TaskForm
 #     template_name= "tasks/index.html"
 
 def task_details(request):
-    queryset = Task.objects.all()
-    task= get_object_or_404(queryset)
+    tasks = Task.objects.all()
+    
     task_form = TaskForm()
-
+    
     return render(request, 
     'tasks/index.html',
-     {'task': task},
+     {'tasks': tasks},
      {'task_form': task_form})
