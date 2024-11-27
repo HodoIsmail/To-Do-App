@@ -1,10 +1,29 @@
 {% extends "base.html" %}
-
+{% load crispy_forms_tags %}
 {% block content %}
 <h1> Doable</h1>
+<!-- Creating New Comments -->
+<div class="col-md-4 card mb-4 mt-3">
+    <div class="card-body">
+     
+      <h3>Add a new task:</h3>
+      <p>Posting as: {{ user.username }}</p>
+      <form id="taskForm" method="post"
+        style="margin-top: 1.3em;">
+        {{ task_form | crispy }}
+        {% csrf_token %}
+        <button id="submitButton" type="submit"
+          class="btn btn-signup btn-lg">Submit</button>
+      </form>
+     
+    </div>
+  </div>
+
 
 {% for task in task_list %}
 <p> {{task}} </p>
+<p>  {{task.completed}}</p>
+<p> {{task.created_on}}</p>
 {% endfor %}
 
 {% endblock %}
