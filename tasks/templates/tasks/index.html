@@ -3,20 +3,37 @@
 {% block content %}
 <h1> Doable</h1>
 
-      <form method="POST">
-       
-        {% csrf_token %}
-        {{task_form}} 
-        <input type="submit"
-          class="btn"></input>
-      </form>
-     
-  
+{% if user.is_authenticated %}
+<li class="nav-item">
+	<a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Logout</a>
+</li>
+{% else %}
+<li class="nav-item">
+	<a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
+		href="{% url 'account_signup' %}">Register</a>
+</li>
+<li class="nav-item">
+	<a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
+</li>
+{% endif %}
 
+    
+
+{% if user.is_authenticated %}
+<form method="POST">
+       
+  {% csrf_token %}
+  {{task_form}} 
+  <input type="submit"
+    class="btn"></input>
+</form>
 
 {% for task in tasks %}
 <p> {{task}} </p>
-
+<a href="{% url 'update task' task.id %}">Update</a>
+<a href="{% url 'delete task' task.id %}">Delete</a>
 {% endfor %}
-
+{% else %}
+<p> Login or register to begin</p>
+{% endif %}
 {% endblock %}

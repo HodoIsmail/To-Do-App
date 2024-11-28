@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <!-- Delete confirmation modal -->
+<h1>Delete Task?</h1>
+     <p> Are you sure you want to delete task {{task}}?
+      This action cannot be undone.</p>
+    
+  <form method="POST" action="">
+
+    {% csrf_token %}
+    <input type="submit"
+    class="btn">Delete</input>
+
+    </form>
+    <a href="{% url 'tasks' %}">Cancel</a>
+       
+    {% endblock %}

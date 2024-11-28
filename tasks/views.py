@@ -1,17 +1,11 @@
 from django.shortcuts import render, redirect
 from django.views import generic
+from django.contrib import messages
 from .models import Task
 from .forms import TaskForm
 
 # Create your views here.
 
-# def index(request):
-#     tasks = Task.objects.all()
-#     context = {'tasks': tasks}
-#     return render(request, 'index.html', context)
-# class TaskList(generic.ListView):
-#     queryset = Task.objects.all()
-#     template_name= "tasks/index.html"
 
 def task_details(request):
     tasks = Task.objects.all()
@@ -32,3 +26,48 @@ def task_details(request):
         'tasks/index.html',
         {'tasks': tasks,
          'task_form': form})
+
+
+def update_task (request, pk):
+    task = Task.objects.get(id=pk)
+
+    form = TaskForm(instance=task)
+
+    if request.method == 'POST':
+        
+        form = TaskForm(request.POST, instance=task)
+        if form.is_valid():
+            task = form.save(commit=False)
+            task.user = request.user
+            task.save()
+            messages.add_message(request, messages.SUCCESS, 'Task Updated!')
+        else:
+            messages.add_message(request, messages.ERROR, 'Error updating comment!')
+        return redirect('/')
+        
+
+    
+
+    return render(request, 
+        'tasks/update_task.html',
+        {'task_form': form,})
+
+def delete_task(request,pk):
+    task = Task.objects.get(id=pk)
+
+    
+
+    if request.method == 'POST':
+        
+        form = TaskForm(request.POST, instance=task)
+        if task.user == request.user:
+            task.delete()
+            messages.add_message(request, messages.SUCCESS, 'Task deleted!')
+        else:
+            messages.add_message(request, messages.ERROR, 'You can only delete your own task!')
+        return redirect('/')
+
+    return render(request, 
+        'tasks/delete_task.html',
+        {'task': task,})
+        
