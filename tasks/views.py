@@ -1,14 +1,15 @@
 from django.shortcuts import render, redirect
 from django.views import generic
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from .models import Task
 from .forms import TaskForm
 
 # Create your views here.
 
-
+@login_required
 def task_details(request):
-    tasks = Task.objects.all()
+    tasks = Task.objects.filter(user=request.user)
 
     if request.method == 'POST':
         
