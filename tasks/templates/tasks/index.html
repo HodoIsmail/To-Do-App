@@ -1,28 +1,47 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-
-
-
-
-    
-
-{% if user.is_authenticated %}
+ <div class="header-bar">
+<h2>Hello {{request.user}}</h2>
+ </div>
+<div class="card m-5 text-center">
+  <div class="card-body new-task">
+    {% if user.is_authenticated %}
 <form method="POST">
        
   {% csrf_token %}
   {{task_form}} 
-  <input type="submit"
+  <input type="Submit" 
     class="btn"></input>
 </form>
+</div>
+</div>
 
+  
+<div class="card m-5 border-0">
+  <div class="card-body task-list">
 {% for task in tasks %}
-<p> {{task}} </p>
+<p> {{task}} {{task.importance}}
+  <label for="task_{{ task.id }}">
+    <input type="checkbox" 
+           id="task_{{ task.id }}"
+           name="task_{{ task.id }}" 
+           {% if task.completed %} checked {% endif %}>
+    Completed
+  </label>
 <a href="{% url 'update task' task.id %}">Update</a>
 <a href="{% url 'delete task' task.id %}">Delete</a>
+</p>
+
+
+
+  
 {% endfor %}
 
 {% else %}
 <p> Login or register to begin</p>
 {% endif %}
+  </div>
+</div>
+
 {% endblock %}

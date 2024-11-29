@@ -4,12 +4,12 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import Task
 from .forms import TaskForm
-
 # Create your views here.
 
 @login_required
 def task_details(request):
     tasks = Task.objects.filter(user=request.user)
+    
 
     if request.method == 'POST':
         
@@ -17,6 +17,7 @@ def task_details(request):
         if form.is_valid():
             task = form.save(commit=False)
             task.user = request.user
+          
             task.save()
             return redirect('/')
         
@@ -26,7 +27,8 @@ def task_details(request):
     return render(request, 
         'tasks/index.html',
         {'tasks': tasks,
-         'task_form': form})
+         'task_form': form,
+         })
 
 
 def update_task (request, pk):
@@ -40,6 +42,7 @@ def update_task (request, pk):
         if form.is_valid():
             task = form.save(commit=False)
             task.user = request.user
+            
             task.save()
             messages.add_message(request, messages.SUCCESS, 'Task Updated!')
         else:
@@ -47,11 +50,11 @@ def update_task (request, pk):
         return redirect('/')
         
 
-    
-
     return render(request, 
         'tasks/update_task.html',
         {'task_form': form,})
+
+
 
 def delete_task(request,pk):
     task = Task.objects.get(id=pk)
@@ -72,3 +75,4 @@ def delete_task(request,pk):
         'tasks/delete_task.html',
         {'task': task,})
         
+
