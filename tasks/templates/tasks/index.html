@@ -20,23 +20,38 @@
   
 <div class="card m-5 border-0">
   <div class="card-body task-list">
-{% for task in tasks %}
-<p> {{task}} {{task.importance}}
-  <label for="task_{{ task.id }}">
+    <table>
+      
+      <tr>
+      <th>Tasks</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      </tr>
+      {% for task in tasks %}
+      <tr>
+  
+  <td>{{task}} </td>
+  <td>{{task.importance}}</td> 
+  <td><label for="task_{{ task.id }}">
     <input type="checkbox" 
            id="task_{{ task.id }}"
            name="task_{{ task.id }}" 
            {% if task.completed %} checked {% endif %}>
     Completed
-  </label>
-<a href="{% url 'update task' task.id %}">Update</a>
-<a href="{% url 'delete task' task.id %}">Delete</a>
-</p>
+  </label></td> 
+  <td><a href="{% url 'update task' task.id %}">Update</a></td>
+
+<td><a href="{% url 'delete task' task.id %}">Delete</a></td>
+{% endfor %}
+</tr>
+</table>
+
 
 
 
   
-{% endfor %}
+
 
 {% else %}
 <p> Login or register to begin</p>
