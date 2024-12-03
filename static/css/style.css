@@ -21,6 +21,7 @@ nav{
 .nav-item {
     font-size: 20px;
     list-style: none;
+    
    
 }
 .nav-item .nav-link{
@@ -31,7 +32,7 @@ nav{
     color: #ABA8B2;
 }
 .main-bg{
-    background-color:#ded5ee;
+    background-color:#ece7f5;
 }
 
 .new-task{
@@ -67,4 +68,19 @@ th, td{
     padding-right:150px !important;
     font-size: 20px;
     color: #fafafa;
+}
+
+.slogan{
+    font-size: 70px !important;
+    margin-top: 50px;
+    color: #3d2f57;
+}
+
+.image{
+    background-image: url(/static/images/unseen-studio-s9CC2SKySJM-unsplash.jpg);
+    background-color: #40678e;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 360px;
 }

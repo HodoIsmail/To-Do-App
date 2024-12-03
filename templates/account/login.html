@@ -2,24 +2,27 @@
 
 {% load i18n %}
 {% load account socialaccount %}
+{% load static %}
 
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
+<br><br><br>
+<div class="container my-10">
+ 
+    
+    <div class="row ">
+        <div class="col-md-6 image center">
+                  <h5 class="slogan">Partner in productivity</h5>     
+        </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2 text-center">
+        <div class="col-md-6 text-center">
             <h3>{% trans "Sign In" %}</h3>
 
             <p>{% blocktrans %}Welcome back to Doable. To get started please log in. If
                 you
                 have not created an account yet, then <a class="link" href="{{ signup_url }}">sign up</a>
                 first.{% endblocktrans %}</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2 text-center">
             <form class="login" method="POST" action="{% url 'account_login' %}">
                 {% csrf_token %}
                 {{ form.as_p }}
@@ -29,6 +32,7 @@
                 <button class="btn btn-signup right" type="submit">{% trans "Sign In" %}</button>
             </form>
         </div>
+       
     </div>
 </div>
 {% endblock %}
