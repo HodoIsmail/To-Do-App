@@ -9,6 +9,10 @@ nav{
     
     
 }
+.icon{
+    font-size: 30px;
+    color: #4C4B63;
+}
 
 .header-bar{
     text-align: center;
@@ -61,4 +65,6 @@ footer{
 
 th, td{
     padding-right:150px !important;
+    font-size: 20px;
+    color: #fafafa;
 }

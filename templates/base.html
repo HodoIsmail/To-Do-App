@@ -10,13 +10,13 @@
 <html class="h-100" lang="en">
 
 <head>
-    <title>Doable</title>
+    <title>Doable title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
      <!-- Custom CSS -->
      <link rel="stylesheet" href="{% static 'css/style.css'%}">
 
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/8ec3b06928.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -30,6 +30,7 @@
     <nav class="navbar navbar-expand-lg">
        
             <a class="navbar-brand" href="{% url 'tasks' %}"><span class="brand">Doable</span></a>
+            <span class="icon"><i class="fa-solid fa-pen-nib "></i></span>
           
            
                                         {% if user.is_authenticated %}
