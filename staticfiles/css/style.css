@@ -1,3 +1,70 @@
-body{
-    background-color: rgb(100, 100, 191);
+
+body {
+    font-family: 'Nunito', sans-sherif !important;
+}
+nav{
+    background-color: #4C4B63;
+    padding: 10px;
+    display: flex;
+    
+    
+}
+.icon{
+    font-size: 30px;
+    color: #4C4B63;
+}
+
+.header-bar{
+    text-align: center;
+    padding-top: 10px;
+}
+.nav-item {
+    font-size: 20px;
+    list-style: none;
+   
+}
+.nav-item .nav-link{
+    color: #ABA8B2;
+}
+.brand, h2{
+    font-size: 50px;
+    color: #ABA8B2;
+}
+.main-bg{
+    background-color:#ded5ee;
+}
+
+.new-task{
+    background-color:#99A1A6;
+    border-radius: 15px !important;
+   
+  
+}
+
+.task-list{
+    background-color: #2F4858;
+   
+    
+}
+p a{
+    text-decoration: none;
+}
+
+    /* #0A122A */
+
+footer{
+    background-color: #4C4B63;
+    margin-top: 0%;
+}
+
+.notepad{
+    width: 200px;
+    height: 350px;
+    align-items: center;
+}
+
+th, td{
+    padding-right:150px !important;
+    font-size: 20px;
+    color: #fafafa;
 }
