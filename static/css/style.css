@@ -38,14 +38,26 @@ nav{
 .new-task{
     background-color:#99A1A6;
     border-radius: 15px !important;
+    max-width: 900px !important;
    
   
 }
 
+
 .task-list{
     background-color: #2F4858;
+    max-width: 900px !important;
+    border-radius: 20px;
    
-    
+ 
+}
+.wrapper { 
+    overflow-x: auto; 
+    padding: 10px;
+   
+}
+.wrapper table { 
+    white-space: nowrap; 
 }
 p a{
     text-decoration: none;
@@ -65,9 +77,35 @@ footer{
 }
 
 th, td{
-    padding-right:150px !important;
-    font-size: 20px;
+    
+    font-size: 18px;
     color: #fafafa;
+    
+}
+th{
+    padding-top: 5px;
+}
+#task-name {
+    padding-right: 150px;
+    padding-top: 20px;
+}
+
+#task-importance{
+    padding-right: 50px;
+}
+#task-status{
+    padding-right: 50px;
+}
+
+#update-item{
+    text-decoration: none;
+    padding-right: 20px !important;
+    color: #fafafa;
+}
+
+#delete-item{
+    padding-right: 0% !important;
+    text-decoration: none;
 }
 
 .slogan{
@@ -83,4 +121,18 @@ th, td{
     background-repeat: no-repeat;
     background-size:cover;
     min-height: 360px;
+}
+/* table {
+    display: block;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+  } */
+
+@media screen and (max-width:950){
+    th, td, td a{
+        padding-right: 50px !important;
+    }
 }

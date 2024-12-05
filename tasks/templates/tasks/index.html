@@ -4,8 +4,12 @@
  <div class="header-bar">
   <h2>Hello {{request.user}}</h2>
  </div>
-<div class="card m-5 text-center">
-  <div class="card-body new-task">
+ <div class="container">
+ <div class="row">
+<div class= "col-12 p-0 new-task mx-auto text-center">
+<div class="wrapper">
+
+
     {% if user.is_authenticated %}
 <form method="POST">
        
@@ -16,10 +20,12 @@
 </form>
 </div>
 </div>
-
+</div>
+<br>
+<div class="row">
+<div class="col-12 p-0 mx-auto task-list ">
+   <div class="wrapper d-grid gap-3">
   
-<div class="card m-5 border-0">
-  <div class="card-body task-list">
     <table>
       
       <tr>
@@ -31,32 +37,32 @@
       {% for task in tasks %}
       <tr>
   
-  <td>{{task}} </td>
-  <td>{{task.importance}}</td> 
-  <td><label for="task_{{ task.id }}">
+  <td id="task-name">{{task}} </td>
+  <td id="task-importance">{{task.importance}}</td> 
+  <td id="task-status"><label for="task_{{ task.id }}">
     <input type="checkbox" 
            id="task_{{ task.id }}"
            name="task_{{ task.id }}" 
            {% if task.completed %} checked {% endif %}>
     Completed
   </label></td> 
-  <td><a href="{% url 'update task' task.id %}">Update</a></td>
+  <td id="update-item"><a href="{% url 'update task' task.id %}">Update</a></td>
 
-<td><a href="{% url 'delete task' task.id %}">Delete</a></td>
+<td id="delete-item"><a  href="{% url 'delete task' task.id %}">Delete</a></td>
 {% endfor %}
 </tr>
 </table>
-
-
+</div>
+</div>
+</div>
 
 
   
-
+</div>
 
 {% else %}
 <p> Login or register to begin</p>
 {% endif %}
-  </div>
-</div>
+
 
 {% endblock %}
