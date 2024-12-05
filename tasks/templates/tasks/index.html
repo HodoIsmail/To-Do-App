@@ -24,21 +24,22 @@
 <br>
 <div class="row">
 <div class="col-12 p-0 mx-auto task-list ">
-   <div class="wrapper d-grid gap-3">
+   <div class="wrapper ">
   
     <table>
       
       <tr>
       <th>Tasks</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th>Importance</th>
+      <th>Status</th>
+      <th>Action</th>
       </tr>
       {% for task in tasks %}
+      
       <tr>
   
   <td id="task-name">{{task}} </td>
-  <td id="task-importance">{{task.importance}}</td> 
+  <td id="task-importance">{{task.get_importance_display}}</td> 
   <td id="task-status"><label for="task_{{ task.id }}">
     <input type="checkbox" 
            id="task_{{ task.id }}"
@@ -46,9 +47,19 @@
            {% if task.completed %} checked {% endif %}>
     Completed
   </label></td> 
-  <td id="update-item"><a href="{% url 'update task' task.id %}">Update</a></td>
-
-<td id="delete-item"><a  href="{% url 'delete task' task.id %}">Delete</a></td>
+ 
+<td id="update-item">
+  <a href="{% url 'update task' task.id %}">
+    <span class="link-text">Update</span>
+    <i class="fas fa-edit icon"></i>
+  </a>
+</td>
+<td id="delete-item">
+  <a href="{% url 'delete task' task.id %}">
+    <span class="link-text">Delete</span>
+    <i class="fas fa-trash-alt icon"></i>
+  </a>
+</td>
 {% endfor %}
 </tr>
 </table>
