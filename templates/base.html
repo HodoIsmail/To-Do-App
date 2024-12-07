@@ -38,7 +38,7 @@
         
                 <div class="collapse navbar-collapse" id="navbarContent">
                     {% if user.is_authenticated %}
-                        <ul class="navbar-nav ml-auto">
+                        <ul class="navbar-nav left">
                             <li class="nav-item">
                                 <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
                                    href="{% url 'account_logout' %}">Logout</a>
@@ -59,7 +59,13 @@
                 </div>
             </nav>
     <main class="main-bg">
-        
+        {% if messages %}
+        <div id="message-display">
+            {% for message in messages %}
+            <p class="alert alert-{{ message.tags }} m-0">{{ message }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}

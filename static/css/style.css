@@ -3,7 +3,7 @@ body {
     font-family: 'Nunito', sans-sherif !important;
 }
 nav{
-    background-color: #5c5b6a;
+    background-color: #893b32;
     padding: 10px;
     display: flex;
     
@@ -11,7 +11,7 @@ nav{
 }
 .nav-icon{
     font-size: 40px;
-    color: #a6a6ab;
+    color: #fafafa;
 }
 
 .header-bar{
@@ -29,14 +29,14 @@ nav{
 }
 .brand, h2{
     font-size: 50px;
-    color: #ABA8B2;
+    color: #fafafa;
 }
 .main-bg{
-    background-color:#ece7f5;
+    background-color:#eee6e5;
 }
 
 .new-task{
-    background-color:#99A1A6;
+    background-color:#fafafa;
     border-radius: 15px !important;
     max-width: 900px !important;
    
@@ -45,7 +45,7 @@ nav{
 
 
 .task-list{
-    background-color: #2F4858;
+    background-color: #fafafa;
     max-width: 900px !important;
     border-radius: 20px;
    
@@ -67,7 +67,7 @@ p a{
     
 
 footer{
-    background-color: #4C4B63;
+    background-color: #893b32;
     margin-top: 0%;
 }
 
@@ -80,7 +80,7 @@ footer{
 th, td{
     
     font-size: 18px;
-    color: #fafafa;
+    color: black;
     
 }
 th{
@@ -97,7 +97,9 @@ th{
 #task-status{
     padding-right: 50px;
 }
-
+form {
+    padding-top: 10px;
+}
 #update-item{
     text-decoration: none;
     padding-right: 20px !important;
@@ -112,7 +114,7 @@ th{
 .slogan{
     font-size: 70px !important;
     margin-top: 50px;
-    color: #3d2f57;
+    color: #2C423F;
 }
 
 .image{
@@ -125,7 +127,7 @@ th{
 }
 
 .btn{
-    background-color: #3d2f57 !important;
+    background-color: #2C423F !important;
     color: #ece7f5 !important;
 }
 .icon {
@@ -133,11 +135,19 @@ th{
   }
 
 
-@media screen and (max-width:768px){
-    
-    
-
-}
+  @media screen and (max-width: 767px) {
+    table {width:80%;}
+    th {display: none;}
+    tr:nth-of-type(2n) {background-color: inherit;}
+    tr td:first-child {background: #d8dbde; font-weight:bold;font-size:1.3em; text-align: center; padding: 10px 5px !important; }
+    tbody td {display: block;  text-align:center; padding: 10px 5px !important}
+    tbody td:before { 
+        content: attr(data-th); 
+        display: block;
+        text-align:center;  
+        padding: 10px 5px !important;
+    }
+ }
 
 @media screen and (max-width: 550px) {
     .link-text {
@@ -149,4 +159,6 @@ th{
     #update-item a, #delete-item a {
       font-size: 20px;
     }
-  }
+}
+/* 
+98473E */
