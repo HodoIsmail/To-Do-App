@@ -11,7 +11,7 @@ nav{
 }
 .nav-icon{
     font-size: 40px;
-    color: #fafafa;
+    color: #ABA8B2;
 }
 
 .header-bar{
@@ -29,7 +29,7 @@ nav{
 }
 .brand, h2{
     font-size: 50px;
-    color: #fafafa;
+    color: #ABA8B2;
 }
 .main-bg{
     background-color:#eee6e5;
@@ -102,7 +102,7 @@ form {
 }
 #update-item{
     text-decoration: none;
-    padding-right: 20px !important;
+    padding-right: 0% !important;
     color: #fafafa;
 }
 
@@ -133,7 +133,10 @@ form {
 .icon {
     display: none !important;
   }
-
+.link-text{
+    text-decoration: none;
+    color: black;
+}
 
   @media screen and (max-width: 767px) {
     table {width:80%;}
@@ -160,5 +163,3 @@ form {
       font-size: 20px;
     }
 }
-/* 
-98473E */
