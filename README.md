@@ -34,7 +34,7 @@ The target audience for Doable, the to-do app, would include the following group
 
 ------
 
-## User Stories
+## User Stories / Wireframes
 
 User Story 1: User Registration and Login
 As a user, I want to create an account and log in so that I can save my tasks and access them from any device.
@@ -88,7 +88,44 @@ o	The status of the task is updated in the database.
 •	Clicking the checkbox again marks the task as incomplete.
 
 
+------
 
+## Features
+ Log-In Page
+ Register page
+ Task List page
+ Update Task Page
+ Delete confirmation page
+------
+
+## Database Structure
+
+------
+
+## Wireframes
+
+------
+
+## Agile Methodology
+
+For the development of Doable, I followed an Agile methodology to ensure iterative and efficient progress throughout the project's lifecycle. A key part of this process was leveraging a Kanban board on GitHub Projects, which you can view <a>https://github.com/users/HodoIsmail/projects/3</a>.
+
+------
+
+## Testing
+
+
+------
+
+## Validation
+
+------
+
+## Deployment
+
+------
+
+## Credits
 
 
 
