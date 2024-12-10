@@ -96,9 +96,10 @@ o	The status of the task is updated in the database.
 1. Doable utilizes AllAuth for secure user authentication and authorization, allowing users to easily create accounts and log in to access their personalized to-do lists.
 
  Task List page:
-1.The app is fully responsive, ensuring an optimal experience across various devices and screen sizes.
-2.The app supports full CRUD (Create, Read, Update, Delete) operations, enabling users to add, view, modify, and remove tasks as needed.
-3.The app offers an intuitive interface that simplifies task management, with a clean design and minimal distractions for easy navigation.
+1. The app is fully responsive, ensuring an optimal experience across various devices and screen sizes.
+2. The app supports full CRUD (Create, Read, Update, Delete) operations, enabling users to add, view, modify, and remove tasks as needed.
+3. The app offers an intuitive interface that simplifies task management, with a clean design and minimal distractions for easy navigation.
+
 ![Screenshot 2024-12-10 at 17 07 26](https://github.com/user-attachments/assets/276e72c4-be00-436f-adb0-566a00ebde95)
 
  Update Task Page:
