@@ -34,7 +34,8 @@ The target audience for Doable, the to-do app, would include the following group
 
 ------
 
-## User Stories / Wireframes
+## User Stories 
+
 
 User Story 1: User Registration and Login
 As a user, I want to create an account and log in so that I can save my tasks and access them from any device.
@@ -104,6 +105,9 @@ o	The status of the task is updated in the database.
 
 ## Wireframes
 
+![Screenshot 2024-12-10 at 16 11 36](https://github.com/user-attachments/assets/2a57f0a5-b054-4ccf-9af9-c85b79d094b1)
+![Screenshot 2024-12-10 at 16 11 48](https://github.com/user-attachments/assets/369fe525-b456-4117-824a-787e8699c68d)
+![Screenshot 2024-12-10 at 16 11 57](https://github.com/user-attachments/assets/a3cd0f49-f58c-4a14-a257-19943a80135c)
 ------
 
 ## Agile Methodology
