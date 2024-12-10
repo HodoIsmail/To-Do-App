@@ -108,6 +108,8 @@ o	The status of the task is updated in the database.
 
 ## Database Structure
 
+![Screenshot 2024-12-10 at 17 39 41](https://github.com/user-attachments/assets/e0db3bfe-a2f5-4f65-9e9b-0cadcd355ff7)
+
 ------
 
 ## Wireframes
