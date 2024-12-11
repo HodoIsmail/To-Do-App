@@ -34,7 +34,8 @@ The target audience for Doable, the to-do app, would include the following group
 
 ------
 
-## User Stories
+## User Stories 
+
 
 User Story 1: User Registration and Login
 As a user, I want to create an account and log in so that I can save my tasks and access them from any device.
@@ -88,7 +89,56 @@ o	The status of the task is updated in the database.
 •	Clicking the checkbox again marks the task as incomplete.
 
 
+------
 
+## Features
+ Log-In Page / Register page:
+1. Doable utilizes AllAuth for secure user authentication and authorization, allowing users to easily create accounts and log in to access their personalized to-do lists.
+
+ Task List page:
+1. The app is fully responsive, ensuring an optimal experience across various devices and screen sizes.
+2. The app supports full CRUD (Create, Read, Update, Delete) operations, enabling users to add, view, modify, and remove tasks as needed.
+3. The app offers an intuitive interface that simplifies task management, with a clean design and minimal distractions for easy navigation.
+
+![Screenshot 2024-12-10 at 17 07 26](https://github.com/user-attachments/assets/276e72c4-be00-436f-adb0-566a00ebde95)
+
+ Update Task Page:
+ Delete confirmation page:
+------
+
+## Database Structure
+
+![Screenshot 2024-12-10 at 17 39 41](https://github.com/user-attachments/assets/e0db3bfe-a2f5-4f65-9e9b-0cadcd355ff7)
+
+------
+
+## Wireframes
+
+![Screenshot 2024-12-10 at 16 11 36](https://github.com/user-attachments/assets/2a57f0a5-b054-4ccf-9af9-c85b79d094b1)
+![Screenshot 2024-12-10 at 16 11 48](https://github.com/user-attachments/assets/369fe525-b456-4117-824a-787e8699c68d)
+![Screenshot 2024-12-10 at 16 11 57](https://github.com/user-attachments/assets/a3cd0f49-f58c-4a14-a257-19943a80135c)
+------
+
+## Agile Methodology
+
+For the development of Doable, I followed an Agile methodology to ensure iterative and efficient progress throughout the project's lifecycle. A key part of this process was leveraging a Kanban board on GitHub Projects, which you can view <a>https://github.com/users/HodoIsmail/projects/3</a>.
+
+------
+
+## Testing
+
+
+------
+
+## Validation
+
+------
+
+## Deployment
+
+------
+
+## Credits
 
 
 
