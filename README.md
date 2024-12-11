@@ -103,7 +103,13 @@ o	The status of the task is updated in the database.
 ![Screenshot 2024-12-10 at 17 07 26](https://github.com/user-attachments/assets/276e72c4-be00-436f-adb0-566a00ebde95)
 
  Update Task Page:
+
+ ![Screenshot 2024-12-11 at 21 39 24](https://github.com/user-attachments/assets/cb0ea22b-8730-4c15-a229-826ad9ee1690)
+
  Delete confirmation page:
+
+ ![Screenshot 2024-12-11 at 21 39 41](https://github.com/user-attachments/assets/fbbbd4d1-83ea-4b3c-87fc-845836771d29)
+
 ------
 
 ## Database Structure
