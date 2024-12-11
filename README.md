@@ -1,5 +1,3 @@
-
-
 ## Project: Doable - A Simple and Effective To-Do App
 
 Doable aims to simplify task management by providing an intuitive and user-friendly app that helps users organize, prioritize, and complete their goals. It focuses on essential features like task creation, priority setting, and progress tracking to eliminate complexity and boost productivity.The site's straightforward and minimalist design enhances user experience, facilitating easy navigation and avoid unnecessary distraction. Doable helps users turn plans into actions and achieve a daily sense of accomplishment.
@@ -128,6 +126,8 @@ o	The status of the task is updated in the database.
 ## Agile Methodology
 
 For the development of Doable, I followed an Agile methodology to ensure iterative and efficient progress throughout the project's lifecycle. A key part of this process was leveraging a Kanban board on GitHub Projects, which you can view <a>https://github.com/users/HodoIsmail/projects/3</a>.
+
+![Screenshot 2024-12-11 at 21 49 58](https://github.com/user-attachments/assets/e60ff92b-2875-4678-81df-978e124d5e93)
 
 ------
 
