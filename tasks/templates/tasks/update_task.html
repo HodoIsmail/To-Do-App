@@ -1,7 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="card m-5 rounded text-center">
-  <div class="card-body new-task">
+<div class="header-bar">
+  <h2>Update your task:</h2>
+</div>
+<div class="container">
+  <div class="row new-task mx-auto text-center">
+    <div class="col-12">
+      
 <form method="POST">
        
     {% csrf_token %}
@@ -12,6 +17,7 @@
   </form>
   <p>{{task.created_on}}</p>
  </div>
+</div>
 </div>
   {% endblock %}
 
