@@ -161,6 +161,9 @@ footer{
     background-color: #893b32;
     margin-top: 0%;
 }
+footer a {
+    color: #212529;
+}
 
 /* media queries for smaller screens */
 
