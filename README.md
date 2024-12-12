@@ -35,7 +35,8 @@ The target audience for Doable, the to-do app, would include the following group
 ## User Stories 
 
 
-User Story 1: User Registration and Login
+User Story 1: 
+User Registration and Login
 As a user, I want to create an account and log in so that I can save my tasks and access them from any device.
 Acceptance Criteria:
 •	A "Sign Up" form includes fields for username, email, and password.
