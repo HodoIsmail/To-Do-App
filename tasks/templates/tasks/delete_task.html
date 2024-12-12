@@ -7,11 +7,10 @@
      <p> Are you sure you want to delete task {{task}}?
       This action cannot be undone.</p>
  
-  <form method="POST" action="">
+  <form method="POST">
 
     {% csrf_token %}
-    <input type="submit"
-    class="btn" value="Delete"></input>
+    <button type="submit" class="btn" aria-label="Delete Task">Delete</button>
     <a class="btn" href="{% url 'tasks' %}">Cancel</a>
     </form>
   </div>

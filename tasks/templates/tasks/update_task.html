@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
+<!-- Header -->
 <div class="header-bar">
   <h2>Update your task:</h2>
 </div>
+<!-- Update task form -->
 <div class="container">
   <div class="row new-task mx-auto text-center">
     <div class="col-12">
@@ -12,8 +14,7 @@
     {% csrf_token %}
     {{task_form}} 
     
-    <input type="submit"
-      class="btn" value="Update"></input>
+    <button type="submit" class="btn" aria-label="Submit Updated Task">Update</button>
   </form>
   <p>{{task.created_on}}</p>
  </div>
