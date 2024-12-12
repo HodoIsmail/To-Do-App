@@ -213,8 +213,11 @@ Finally, I pushed all my changes to GitHub and linked the repository to my Herok
 ## Credits
 
 For core coding prnciples I used the walkthrough project "I Think Therefore I Blog". 
+
 For the table responsiveness, I used code from: Exis | exisweb.net/responsive-tables-in-wordpress. Original idea: Dudley Storey | codepen.io/dudleystorey/pen/Geprd
+
 For basic debugging I used ChatGPT and perplexity
+
 I would like to express my gratitude to the entire bootcamp cohort I studied with at the Code Institute, as well as the incredible staff who have helped me grow and achieve so much in such a short time.
 
 
