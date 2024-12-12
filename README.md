@@ -129,6 +129,10 @@ For the development of Doable, I followed an Agile methodology to ensure iterati
 
 ![Screenshot 2024-12-11 at 21 49 58](https://github.com/user-attachments/assets/e60ff92b-2875-4678-81df-978e124d5e93)
 
+
+To Do: This column housed tasks and user stories that had been identified but were awaiting development.
+In Progress: This column tracked tasks currently being worked on
+Complete: This column lists tasks that have been finished and are awaiting for review or testing, highlighting progress and maintaining a log of completed work.
 ------
 
 ## Testing
