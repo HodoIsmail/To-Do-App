@@ -2,6 +2,7 @@
 
 Doable aims to simplify task management by providing an intuitive and user-friendly app that helps users organize, prioritize, and complete their goals. It focuses on essential features like task creation, priority setting, and progress tracking to eliminate complexity and boost productivity.The site's straightforward and minimalist design enhances user experience, facilitating easy navigation and avoid unnecessary distraction. Doable helps users turn plans into actions and achieve a daily sense of accomplishment.
 
+![Screenshot 2024-12-12 at 16 54 45](https://github.com/user-attachments/assets/e1f4be62-8b66-42b5-94f3-4993cac33402)
 
 ------
 ### UX
@@ -138,6 +139,7 @@ Complete: This column lists tasks that have been finished and are awaiting for r
 
 ## Testing
 
+![Screenshot 2024-12-12 at 16 45 13](https://github.com/user-attachments/assets/a06f14c6-890f-4131-9a35-9c068e0601e6)
 
 
 ------
