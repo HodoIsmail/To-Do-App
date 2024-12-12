@@ -138,6 +138,7 @@ Complete: This column lists tasks that have been finished and are awaiting for r
 ## Testing
 
 
+
 ------
 
 ## Validation
@@ -148,13 +149,6 @@ Complete: This column lists tasks that have been finished and are awaiting for r
 ![Screenshot 2024-12-12 at 16 07 55](https://github.com/user-attachments/assets/b66fd932-0466-4d11-8faa-ca4645388231)
 ![Screenshot 2024-12-12 at 16 05 07](https://github.com/user-attachments/assets/5e606b11-7572-4c97-b7b6-a6c32b790772)
 ![Screenshot 2024-12-12 at 16 02 14](https://github.com/user-attachments/assets/d7a50e44-99c9-4e2f-b13d-c4647030d4b4)
-
-
-
-
-
-
-
 
 
 ------
@@ -197,10 +191,28 @@ Finally, I pushed all my changes to GitHub and linked the repository to my Herok
 ------
 ## Technologies used:
 
+- HTML
+- CSS
+- Python
+- Django
+- Bootstrap 5
+- Heroku
+- PostgreSQL
+- Balsamiq
+- Font Awesome
+- DBdiagram
+- Unsplash
+- GitHub
+- Git
+- ChatGPT
+- Google Fonts
+
 ## Credits
 
-
-
+For core coding prnciples I used the walkthrough project "I Think Therefore I Blog". 
+For the table responsiveness, I used code from: Exis | exisweb.net/responsive-tables-in-wordpress. Original idea: Dudley Storey | codepen.io/dudleystorey/pen/Geprd
+For basic debugging I used ChatGPT and perplexity
+I would like to express my gratitude to the entire bootcamp cohort I studied with at the Code Institute, as well as the incredible staff who have helped me grow and achieve so much in such a short time.
 
 
 
