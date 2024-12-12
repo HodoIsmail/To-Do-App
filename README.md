@@ -141,12 +141,61 @@ Complete: This column lists tasks that have been finished and are awaiting for r
 ------
 
 ## Validation
+![Screenshot 2024-12-12 at 15 51 43](https://github.com/user-attachments/assets/6a26006e-9f83-490e-9c78-95773ef2bca7)
+![Screenshot 2024-12-12 at 15 43 12](https://github.com/user-attachments/assets/f9b7e864-0427-4e7d-8f25-eaf817fcfe0c)
+![Screenshot 2024-12-12 at 16 17 06](https://github.com/user-attachments/assets/44432a57-43ec-446c-8e9c-928bd57e10e4)
+![Screenshot 2024-12-12 at 16 09 05](https://github.com/user-attachments/assets/0be9aa32-9c5f-464d-b09f-c9e7b2c92220)
+![Screenshot 2024-12-12 at 16 07 55](https://github.com/user-attachments/assets/b66fd932-0466-4d11-8faa-ca4645388231)
+![Screenshot 2024-12-12 at 16 05 07](https://github.com/user-attachments/assets/5e606b11-7572-4c97-b7b6-a6c32b790772)
+![Screenshot 2024-12-12 at 16 02 14](https://github.com/user-attachments/assets/d7a50e44-99c9-4e2f-b13d-c4647030d4b4)
+
+
+
+
+
+
+
+
 
 ------
 
 ## Deployment
 
+I used Heroku for deployment and all the code was written in GitPod. To ensure successful deployment I did the following:
+
+Setting Up Django
+To begin, I installed Django and made sure to generate a requirements file that lists all the installed packages and their versions. This step ensures the environment can be recreated easily later. Once Django was installed, I created a new project in the current directory, naming it appropriately. After that, I applied Django's default migrations to set up the initial database structure.
+
+To test if everything was working, I ran the development server. As expected, I encountered a yellow error screen, which was normal because Django didn’t recognize the hostname. I copied the hostname from the error message and added it to the ALLOWED_HOSTS list in the settings file. I also configured an additional security setting for CSRF verification.
+
+Creating the App
+Once the project was set up, I created a new app within it to handle specific functionality. In Django, apps act as individual components that handle distinct features, so this step was essential for organizing my project. After creating the app, I registered it in the INSTALLED_APPS section of the settings file, which allows Django to recognize and use the app.
+
+Preparing for Deployment on Heroku
+To deploy my project, I created a new app on Heroku via the Heroku dashboard and assigned it a unique name. I added a configuration variable to temporarily disable static file collection during the initial setup. Next, I installed Gunicorn, a web server that Heroku uses to serve Django applications, and documented this installation in my requirements file.
+
+I created a special configuration file called a Procfile, which specifies how Heroku should run my project. Additionally, I added the Heroku app’s URL to the ALLOWED_HOSTS list in the settings to ensure the project could run on the live server.
+
+Setting Up the Database
+For the database, I used Code Institute’s database creation tool to generate a PostgreSQL database URL. This tool provided me with the connection details needed to integrate the database with my project.
+
+After that, I installed the necessary database packages and created an env.py file to securely store sensitive variables, like the database URL and secret key. I made sure to add this file to .gitignore to keep it out of version control. Then, I updated the settings file to replace the default SQLite database with the PostgreSQL database and linked the secret key to the environment variable.
+
+Finalizing the Database
+To finalize the database setup, I ran the migration commands to create the necessary tables in the database. This step ensured that the database was fully aligned with the models I had defined in my project. I also created a superuser account, which allows me to manage the backend of the application through Django’s admin interface.
+
+Handling Static and Media Files
+I set up Cloudinary to manage static and media files. This service simplifies the process of storing and optimizing images and other assets. I updated the settings file to configure the static file paths and integrated Cloudinary for file storage.
+
+To improve the way static files were served, I installed WhiteNoise, which allows Django to handle static files directly without relying on external web servers. This was a crucial step to ensure the project worked seamlessly on Heroku.
+
+Testing and Deployment
+To test the project, I created a basic homepage and linked a custom stylesheet. This was a good way to confirm that everything was functioning correctly, including the handling of static files.
+
+Finally, I pushed all my changes to GitHub and linked the repository to my Heroku app. I manually triggered the deployment, and once the process completed, the project was live and accessible online.
+
 ------
+## Technologies used:
 
 ## Credits
 
@@ -160,23 +209,4 @@ Complete: This column lists tasks that have been finished and are awaiting for r
 
 ------
 
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-
-
-**How will this affect me?**
-
-
-
-**So….?**
-
-
-
-**Can I opt out?**
-
-
-
-**Anything more?**
 
